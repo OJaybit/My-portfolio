@@ -1,0 +1,146 @@
+@media (max-width: 992px) {
+  .navbar-collapse {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+body {
+  background: #081b29;
+}
+.navbrand {
+  position: relative;
+}
+
+.navbrand::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  background: #081b29;
+  height: 100%;
+  animation: showRight 2s ease forwards infinite;
+  animation-delay: 0.4s;
+}
+@keyframes showRight {
+  100% {
+    width: 0;
+  }
+}
+
+.animinated-text {
+  font-size: 30px;
+  font-weight: 500;
+  min-width: 200px;
+}
+
+.animinated-text span {
+  position: relative;
+}
+.animinated-text span::before {
+  content: "Frontend Developer";
+  color: #ff7f50;
+  animation: words 20s infinite;
+}
+.animinated-text span::after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  background-color: aqua;
+  border-left: 2px solid #ff7f50;
+  background-color: #081b29;
+  right: -8px;
+  animation: cursor 0.8s infinite, typing 20s steps(14) infinite;
+}
+@keyframes cursor {
+  to {
+    border-left: 2px solid #081b29;
+  }
+}
+@keyframes words {
+  0%,
+  20% {
+    content: "Frontend Developer";
+  }
+  21%,
+  40% {
+    content: "Designer";
+  }
+  /* 41%,
+  60% {
+    content: "freenlsncer";
+  }
+
+  61%,
+  100% {
+    content: "";
+  } */
+}
+
+@keyframes typing {
+  10%,
+  15%,
+  30%,
+  55%,
+  70%,
+  /* 75%, */
+  95% {
+    width: 0;
+  }
+  5%,
+  20%,
+  /* 25%, */
+  40%,
+  45%,
+  60%,
+  65%,
+  80%,
+  85% {
+    width: calc(100% + 8px);
+  }
+}
+a.nav-link:hover {
+  box-shadow: 0 0 35px #00abf0;
+  background: #00abf0;
+  transform: translateX(-30%) skewY(5deg);
+  transition: 0.2s;
+}
+.btn:hover {
+  transition: transform 0.3s ease-in-out 0s, background-color 0.3s;
+  transform: translateY(-10px);
+}
+.btn a:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 35px #00abf0;
+}
+.box {
+  width: 150px;
+  height: 100px;
+  background-color: #00abf0;
+  border: 2px solid white;
+  border-radius: 5px;
+  text-align: center;
+}
+.row1,
+.row2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.button1:hover {
+  transition: transform 0.3s ease-in-out 0s, background-color 0.3s;
+  transform: translateY(-10px);
+}
+.button1:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 35px #00abf0;
+}
+.button1 {
+  background-color: #00abf0;
+  border-radius: 10px;
+  border: 2px solid#00abf0;
+  outline: none;
+  margin-right: 10px;
+  margin-top: 5px;
+}
