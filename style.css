@@ -1,12 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 @media (max-width: 992px) {
   .navbar-collapse {
     display: flex;
     justify-content: center;
   }
+  .second-card {
+    margin: 30px 0 30px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .box {
+    margin-bottom: 10px;
+    /* padding-bottom: 10px; */
+  }
+
+  #contact-form {
+    width: 80%;
+
+    margin: 0 auto;
+  }
+  .second-card {
+    margin: 30px 0 30px 0;
+  }
 }
 
 body {
   background: #081b29;
+  font-family: "Poppins", sans-serif;
 }
 .navbrand {
   position: relative;
@@ -142,13 +164,116 @@ a.nav-link:hover {
   margin-top: 5px;
 }
 
-@media (max-width: 600px) {
-  .box {
-    margin-bottom: 10px;
-    /* padding-bottom: 10px; */
-  }
-}
-
 .box:hover {
   transform: scale(1.3);
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form {
+  max-width: 600px;
+  width: 100%;
+}
+
+.form-group-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.form-textarea {
+  height: 120px;
+  resize: none;
+}
+
+.form-submit {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #00abf0;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+}
+
+.form-submit:hover {
+  box-shadow: 0 0 35px #00abf0;
+}
+
+.flip-container {
+  perspective: 1000px;
+}
+
+.flip-card {
+  width: 300px;
+  height: 150px;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: transform 1500ms;
+}
+
+.flip-container:hover > .flip-card {
+  transform: rotateY(180deg);
+  cursor: pointer;
+}
+
+.flip-card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  box-shadow: 0 0 5px 2px #00abf0;
+}
+
+.flip-card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  background-color: #081b29;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  font-size: 18px;
+  box-shadow: 0 0 5px 2px #00abf0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+}
+.icon-circle {
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  border-radius: 50%;
 }
