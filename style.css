@@ -281,8 +281,8 @@ a {
 #hero,
 p,
 h2,
-.box,
 #About,
+#Skill,
 #portfolio,
 #contact-form {
   animation: CSSscrollReveal ease-in-out both;
