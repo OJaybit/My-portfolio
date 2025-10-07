@@ -27,7 +27,7 @@
 }
 
 body {
-  background: #081b29;
+  background: #0f3f61;
   font-family: "Poppins", sans-serif;
 }
 .navbrand {
@@ -88,17 +88,9 @@ body {
   }
   21%,
   40% {
-    content: "Designer";
+    content: "viber coder";
   }
-  /* 41%,
-  60% {
-    content: "freenlsncer";
-  }
-
-  61%,
-  100% {
-    content: "";
-  } */
+ 
 }
 
 @keyframes typing {
