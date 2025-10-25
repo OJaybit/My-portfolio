@@ -27,7 +27,7 @@
 }
 
 body {
-  background: #0f3f61;
+  background: #081b29;
   font-family: "Poppins", sans-serif;
 }
 .navbrand {
@@ -62,7 +62,7 @@ body {
 }
 .animinated-text span::before {
   content: "Frontend Developer";
-  color: #ff7f50;
+  color: #ffffff;
   animation: words 20s infinite;
 }
 .animinated-text span::after {
@@ -70,15 +70,13 @@ body {
   position: absolute;
   width: calc(100% + 8px);
   height: 100%;
-  background-color: aqua;
-  border-left: 2px solid #ff7f50;
-  background-color: #081b29;
+  background-color: #081b29 ;
   right: -8px;
   animation: cursor 0.8s infinite, typing 20s steps(14) infinite;
 }
 @keyframes cursor {
   to {
-    border-left: 2px solid #081b29;
+    border-left: 2px solid transparent;
   }
 }
 @keyframes words {
@@ -88,7 +86,7 @@ body {
   }
   21%,
   40% {
-    content: "viber coder";
+    content: "SaaS developer";
   }
  
 }
